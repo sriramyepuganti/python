@@ -201,6 +201,17 @@ print("join:", ",".join(['1','2','3']))
 #Lists
 # Python lists are mutable type its mean we can modify its element after it created.
 # The lists are ordered and mutable type.
+# append()	Adds an element at the end of the list
+#clear()	Removes all the elements from the list
+#copy()	Returns a copy of the list
+#count()	Returns the number of elements with the specified value
+#extend()	Add the elements of a list (or any iterable), to the end of the current list
+#index()	Returns the index of the first element with the specified value
+#insert()	Adds an element at the specified position
+#pop()	Removes the element at the specified position
+#remove()	Removes the first item with the specified value
+#reverse()	Reverses the order of the list
+#sort()	Sorts the list
 # l1*2 => l1 l1, l1 + l1 => l1 l1, ele in l1, len(l1), cmp(l1,l2), max(l1), min(l1), list(other_data_type)
 
 list1 = [1,2,"Peter",4.50,"Ricky",5,6]  
@@ -231,10 +242,27 @@ print(type(tupleTest1))
 # A Python set is the collection of the unordered items. Each element in the set must be unique, immutable, and the sets remove the duplicate elements.
 # It can contain any type of element such as integer, float, tuple etc. But mutable elements (list, dictionary, set) can't be a member of set.
 # clear,add,update, remove,discard,copy,pop,union,intersection, set(list)
-setDays = {"Monday", "Tuesday", "Wednesday", "Thursday","Sunday"} 
-setDays.add("Friday")
-setDays.update(["Friday", "Saturday"]) # it accepts iterable ele
-setDays.discard("Tuesday"); # it will not throw error if item not found
+#add()	Adds an element to the set
+#clear()	Removes all the elements from the set
+#copy()	Returns a copy of the set
+#difference()	Returns a set containing the difference between two or more sets
+#difference_update()	Removes the items in this set that are also included in another, specified set
+#discard()	Remove the specified item
+#intersection()	Returns a set, that is the intersection of two or more sets
+#intersection_update()	Removes the items in this set that are not present in other, specified set(s)
+#isdisjoint()	Returns whether two sets have a intersection or not
+#issubset()	Returns whether another set contains this set or not
+#issuperset()	Returns whether this set contains another set or not
+#pop()	Removes an element from the set
+#remove()	Removes the specified element
+#symmetric_difference()	Returns a set with the symmetric differences of two sets
+#symmetric_difference_update()	inserts the symmetric differences from this set and another
+#union()	Return a set containing the union of sets
+#update()	Update the set with another set, or any other iterable
+#setDays = {"Monday", "Tuesday", "Wednesday", "Thursday","Sunday"} 
+#setDays.add("Friday")
+#setDays.update(["Friday", "Saturday"]) # it accepts iterable ele
+#setDays.discard("Tuesday"); # it will not throw error if item not found
 #setDays.remove("Tuesday"); # it will throw error if item not found
 print(setDays)    
 print(type(setDays))    
@@ -248,7 +276,17 @@ for i in setDays:
 # Value can be any type such as list, tuple, integer, etc.
 
 # dict({}), del dic[0], pop(), i in dict.values(), x,y in dict.items(), len(), get(), copy(), has_key(), count(), 
-
+#clear()	Removes all the elements from the dictionary
+#copy()	Returns a copy of the dictionary
+#fromkeys()	Returns a dictionary with the specified keys and value
+#get()	Returns the value of the specified key
+#items()	Returns a list containing a tuple for each key value pair
+#keys()	Returns a list containing the dictionary's keys
+#pop()	Removes the element with the specified key
+#popitem()	Removes the last inserted key-value pair
+#setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
+#update()	Updates the dictionary with the specified key-value pairs
+#values()	Returns a list of all the values in the dictionary
 
 # functions
 # all the changes made to the reference inside the function revert back to the original value referred by the reference.
