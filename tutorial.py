@@ -562,3 +562,27 @@ d.speak()
 
 # for x in myDbCursor:
 #   print(x)
+
+
+# pypi.org -> python libraries 
+# publish own package in python
+# project structure
+# first_app
+#   ->setup.py
+#   -> module
+#       -> __init__.py
+#      -> index.py
+
+# setup.py
+# from setuptools import setup, find_packages
+# setup(name='', version='')
+
+# build the project
+# python setup.py sdist bdist_wheel
+
+# local installation
+# python install path/file_name.whl
+
+# publish
+# pip install twine
+# twine upload --repository testpypi dist/*
